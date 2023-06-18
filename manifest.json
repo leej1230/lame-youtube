@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Wack Youtube",
+  "version": "1.0",
+  "description": "Makes Youtube look lame",
+  "icons": {
+    "16": "images/icon16.jpeg",
+    "32": "images/icon32.jpeg",
+    "48": "images/icon48.jpeg",
+    "128": "images/icon128.jpeg"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+          "https://www.youtube.com/*"
+      ]
+    }
+  ]
+}
