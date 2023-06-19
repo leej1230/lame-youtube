@@ -10,9 +10,13 @@
     "128": "images/icon128.jpeg"
   },
   "content_scripts": [
+    // {
+    //   "js": ["scripts/yt_home.js"],
+    //   "matches": ["https://www.youtube.com/"]
+    // },
     {
-      "js": ["scripts/content.js"],
-      "matches": ["https://www.youtube.com/"]
+      "js": ["scripts/yt_subs.js"],
+      "matches": ["https://www.youtube.com/feed/subscriptions/*"]
     }
   ]
 }
